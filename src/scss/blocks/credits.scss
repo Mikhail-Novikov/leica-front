@@ -1,0 +1,277 @@
+.credits-plus{
+    position: relative;  
+    padding: 50px 0 0;
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 11;
+  }
+
+  &-bg{
+
+    &:after{
+      content: '';
+      background: url(../img/credits-bg.jpg) -15% 0 no-repeat;
+      background-size: 100%;
+      position: absolute;
+      bottom: 90px;
+      left: -300px;
+      z-index: -1;  
+      height: 415px;
+      width: 415px; 
+      border-radius: 100%;      
+      }}
+}    
+
+.credits-plus-items__item {
+  margin: 20px 7.5px;
+  padding: 0 20px 20px 20px;
+  width: 230px;
+  height: 260px;
+  text-align: center;
+  box-shadow: 0 30px 50px rgba(0,0,0,.09);
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  z-index: 11;
+  &-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: 400;
+    min-height: 50px;
+    margin: 20px 0
+  }
+
+  &-p{
+    font-size: 10px;
+    line-height: 18px;
+    &-img{
+      width: 45px;
+      height: 45px;
+      padding: 5px;
+      box-shadow: 0 52px 85px rgba(0, 0, 0, 0.09);
+      background-color: #cd457e;
+      margin: 0 auto;
+      border-radius: 40px;
+      position: relative;
+      margin-top: -22.5px;
+      svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.credits-plus-form {
+  padding: 60px 0;
+  background-image: linear-gradient(139deg,#fa6e71 0,#c83f80 100%);
+  color: #fff
+}
+.credits-plus-form__wrap, .benefit-invest-form__wrap {
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefit-invest-items {
+  display: flex
+}
+.benefit-invest-items__item {
+  margin: 15px;
+  padding: 30px;
+  width: 33.3333%;
+  text-align: center;
+  box-shadow: 0 30px 50px rgba(0,0,0,.09)
+}
+.benefit-invest-items__item-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 36px;
+  font-weight: 300;
+  min-height: 70px;
+  margin: 20px 0
+}
+.benefit-invest-form {
+  padding: 40px 0 50px;
+  background-image: linear-gradient(139deg, rgba(250, 110, 113, 0.89) 0, rgba(200, 63, 128, 0.9) 100%);
+  color: #fff;
+  margin-top: 50px;
+}
+.benefit-invest-form__wrap {
+
+}
+.benefit-invest {
+  margin: 120px 0
+}
+.benefit-invest-form__txt, .credits-plus-form__txt {
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@include media-breakpoint-up(xss) {
+
+  .credits-plus{
+      padding: 80px 0 0;
+    &-bg{
+
+      &:after{
+        content: '';
+        background: url(../img/credits-bg.jpg) -15% 0 no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 30px;
+        left: -800px;
+        z-index: -1;  
+        height: 915px;
+        width: 915px; 
+        border-radius: 100%;      
+        }}
+  } 
+  .credits-plus-items{
+    flex-wrap: nowrap;    
+    &__item {
+      width: 50%;
+      margin: 40px 7.5px;
+      padding: 0 20px 20px 20px;
+      height: 260px;
+      &-title{
+        font-size: 20px;
+        line-height: 26px;
+      }
+      &-p{
+        font-size: 12px;
+        line-height: 18px;
+        &-img{
+          margin-top: -22.5px;
+        }
+      }
+    }
+
+  }
+    .benefit-invest-form__txt {
+      font-size: 14px;
+      line-height: 20px;
+      width: 240px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+  .credits-plus-items__item {
+
+    &-title {
+
+    }
+
+    &-p{
+
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .credits-plus{
+      padding: 50px 0 0;
+    &-bg{
+
+      &:after{
+        content: '';
+        background: url(../img/credits-bg.jpg) -15% 0 no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 30px;
+        left: -600px;
+        z-index: -1;  
+        height: 915px;
+        width: 915px; 
+        border-radius: 100%;      
+        }}
+  }   
+  .credits-plus-form__wrap {
+    flex-wrap: nowrap;
+  }
+  .credits-plus-items{
+    flex-wrap: nowrap;    
+    &__item {
+      &-title{
+        font-size: 20px;
+      }
+      &-p{
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+  .benefit-invest-form {
+    padding: 60px 0;
+    margin-top: 80px;
+  }
+
+  .benefit-invest-form__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: center;
+  }
+  .benefit-invest-form__txt, .credits-plus-form__txt {
+    font-size: 24px;
+    height: 78px;
+    line-height: 24px;
+    padding-right: 30px;
+    margin: 0;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+
+}
+@include media-breakpoint-up(md) {
+  .credits-plus{
+    padding: 80px 0 0;
+  }
+  .credits-plus-items{
+    flex-wrap: nowrap;    
+    &__item {
+      padding: 0 30px 30px 30px;
+      height: 335px;
+      &-title{
+        font-size: 24px;
+        line-height: 1.6;
+      }
+      &-p{
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xl) {
+  .credits-plus-items{
+    flex-wrap: nowrap;    
+    &__item {
+      padding: 0 40px 40px 40px;
+      &-title{
+        font-size: 28px;
+      }
+      &-p{
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+  }
+}

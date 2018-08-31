@@ -1,0 +1,28 @@
+.swiper-button{
+  svg{
+    color: #838383;
+    font-size: 50px;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    background: none;
+  }
+  .swiper-button-prev {
+    
+  }
+  .swiper-button-next {
+
+  }
+
+}
+.swiper-pagination{
+  width: 100%;
+  &-bullet{
+    background-color: #6d6d6d;
+    opacity: 0.2;
+    margin: 5px;
+  }
+  &-bullet-active {
+    background-color: #6d6d6d; 
+    opacity: 1;   
+  }
+}

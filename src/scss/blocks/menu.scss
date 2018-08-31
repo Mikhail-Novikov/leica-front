@@ -1,0 +1,102 @@
+.menu {
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+    flex-flow: column;
+    margin: -7px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+
+    &--current {
+      .menu__link {
+        color: $color-link;
+        letter-spacing: 0.6px;  
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__link {
+    color: #6d6d6d;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    margin: 15px 0;
+    transition: background 0.3s; 
+        letter-spacing: 0.6px;      
+    &:hover {
+      color: $color-link;
+      font-weight: bold;  
+      background-size: 100% 2px;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  @include media-breakpoint-up(xss) {
+    &__inner {
+      flex-flow: row;
+
+      margin: 0;
+    }
+
+    &__item {
+      min-width: 0.1Px;
+      padding:  0;
+      margin-right: 40px;
+      &:first-child{
+       width: 145px;       
+      }
+    }
+
+    &__link {
+      font-size: 11px;
+      line-height: 19px;
+      letter-spacing: 0.6px;
+      padding: 25px 0;
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    &__link {
+      font-size: 12px;
+      padding: 35px 0;
+      background: linear-gradient(139deg, #fa6e71 0%, #c84080 100%) no-repeat 0 100%/0 2Px; 
+      &:hover {
+        color: $color-link;
+        font-weight: bold;  
+        background-size: 100% 2px;
+        letter-spacing: 0.48px;
+      } 
+    } 
+    &__item { 
+    &--current {
+      .menu__link {
+          color: $color-link;
+          background: linear-gradient(139deg, #fa6e71 0%, #c84080 100%) no-repeat 0 100%/100% 2Px;
+          background-size: 100% 2px;
+        }
+      }
+    } 
+  }
+  @include media-breakpoint-up(lg) {
+    &__inner {
+      justify-content: space-between;
+    }
+    &__item {    
+      margin-right: 0;    
+    }
+    }
+}

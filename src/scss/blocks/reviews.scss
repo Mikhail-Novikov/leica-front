@@ -1,0 +1,92 @@
+section.home-reviews .section-center-p {
+    max-width: 650px;
+    margin: 20px auto;
+    padding-top: 40px;
+    text-align: center;
+    background: url(../i/svg/reviewsicon.svg) top center no-repeat;
+}
+
+.home-reviews-items__spanimg img {
+    margin: 20px auto;
+}
+
+.home-reviews-items__title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.home-reviews-items .home-reviews-items__title, .home-reviews-items .home-reviews-items__p {
+    display: none;
+}
+
+.home-reviews-items .swiper-slide-active .home-reviews-items__title {
+    display: block;
+}
+.home-reviews-items .home-reviews-items{
+    position: absolute;      
+    top: 210px;
+    width: 100%;     
+}
+.home-reviews-items .swiper-slide-active .home-reviews-items__p {
+    text-align: center;
+    color: #6d6d6d;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    right: auto;
+}
+.home-reviews-items .swiper-wrapper {
+    padding-bottom: 90px;
+}
+.home-reviews-items .slick-slide {
+    padding-bottom: 17px;
+    position: relative;
+}
+.home-reviews-items .swiper-pagination{
+    background-color: #f7f7f7;
+    text-align: center;
+    height: 2px;
+    bottom: 100px;
+}
+.home-reviews-items .swiper-pagination:after{
+    content: '';
+    width: 115px;
+    height: 2px;
+    margin: 0 auto;
+    background-image: linear-gradient(139deg, #fa6e71 0%, #c84080 100%);
+    display: inline-block;
+    position: absolute;
+}
+
+.home-reviews-items .swiper-pagination-bullet{
+    border-radius: 0;
+    background-color: TRANSPARENT;
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    height: 2px;
+}
+ 
+.home-reviews span.home-reviews-items__spanimg {
+    width: 70px;
+    height: 150px;
+    display: block;
+    margin: 45px auto 0;
+    opacity: 0.6;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.home-reviews .swiper-slide-active span.home-reviews-items__spanimg {
+    width: 100%;
+    opacity: 1;
+    margin: 0 auto 0;
+}
+
+.home-reviews .swiper-slide-active {
+    width: 410px;
+}
+.carousel .slick-slide > div {
+    height: 100%;
+}

@@ -1,0 +1,43 @@
+.section-intro {
+  display: flex;
+  background: url-img('wn-intro-bg.jpg') no-repeat 50% 50%/cover;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url-img('wn-intro-img.png') no-repeat 50% 100%/contain;
+    width: percentage(289/320);
+    padding-top: percentage(127/320);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__logo {
+    width: 342px;
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
+
+  @include media-breakpoint-up(md) {
+    &::after {
+      width: percentage(967/1280);
+      max-width: 967px;
+      padding-top: percentage(434/1280);
+      transform: translate(percentage(-65/967) - 50%, 0);
+    }
+  }
+}

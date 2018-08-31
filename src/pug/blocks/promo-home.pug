@@ -1,0 +1,54 @@
+mixin promo-home
+  +b.SECTION.promo-section--home
+
+    .container.mb-sm-50.mb-35
+      .row
+        .col-sm-6.col-md-8.col-xl-5
+          h1.promo-section__title Кредиты 
+            br 
+            | для бизнеса
+
+          p.promo-section__p с индивидуальной процентной ставкой
+        
+          .promo-section-call
+            .promo-section-call__span Рассчитайте сумму займа
+
+            form.section-form(action="")
+              input.section-form__input(type="text", placeholder="Название компании или ИП")
+
+              button.btn-grad(type="submit" title="Отправить мне письмо с рассчётом") Узнать
+
+          .promo-section-video
+            span.promo-section-video__icon.pulse
+              img.d-block(src="img/icons/promoiconsvg.svg", alt="")
+          
+            a.promo-section-video__p(href="#") Как это работает?  
+
+
+
+        .promo-section-bg
+
+
+    section.promo-section-pluss
+      .container
+        .row.justify-content-between
+
+          .col-sm-3.promo-section-pluss__item
+            p.promo-section-pluss__item-title 46
+                
+            span.promo-section-pluss__item-p инвесторов уже зарегистрировано
+     
+          .col-sm-3.promo-section-pluss__item
+            p.promo-section-pluss__item-title 18
+
+            span.promo-section-pluss__item-p компаний уже получили займы
+
+          .col-sm-3.promo-section-pluss__item
+            p.promo-section-pluss__item-title 1 987 650
+
+            span.promo-section-pluss__item-p рублей привлечено через Leika
+
+          .col-sm-3.promo-section-pluss__item
+            p.promo-section-pluss__item-title 8
+
+            span.promo-section-pluss__item-p компаниям нужны займы сейчас                 

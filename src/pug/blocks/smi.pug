@@ -1,0 +1,49 @@
+mixin smi
+  section.section.smi-about
+    .container
+      p.section-center-title СМИ о нас
+      .smi-about-items
+        .slider.slider-two.swiper-container            
+          .swiper-wrapper
+            .swiper-slide.smi-about-item
+              span.smi-about-item__span-img
+                img(src="img/content/smi1.png", alt="")
+              |                     
+              a.smi-about-item__link(href="") Читать
+                +icon-svg('external')
+                
+              p.smi-about-item__p
+                | Контрапункт дает потребительский конкурент. Дольник, как принято считать, решительно аннигилирует межличностный метод изучения рынка, учитывая результат предыдущих…
+            |                 
+            |                 
+            .swiper-slide.smi-about-item
+              span.smi-about-item__span-img
+                img(src="img/content/smi2.png", alt="")
+              |                    
+              a.smi-about-item__link(href="")
+                | Читать
+                +icon-svg('external')
+              |                     
+              p.smi-about-item__p
+                | Эпитет, суммируя приведенные примеры, правомочен. Итак, ясно, что несобственно-прямая речь программирует полифонический роман. Продукт, согласно традиционным…
+            |                 
+            .swiper-slide.smi-about-item
+              span.smi-about-item__span-img
+                img(src="img/content/smi1.png", alt="")
+              |                     
+              a.smi-about-item__link(href="")
+                | Читать
+                +icon-svg('external')
+              |                     
+              p.smi-about-item__p
+                | Контрапункт дает потребительский конкурент. Дольник, как принято считать, решительно аннигилирует межличностный метод изучения рынка, учитывая результат предыдущих…
+
+
+        .swiper-button
+            .swiper-button-next
+              
+              +icon-svg('ic_arrow_right')
+            .swiper-button-prev
+              +icon-svg('ic_arrow_left')
+
+        .swiper-pagination

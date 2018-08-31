@@ -1,0 +1,42 @@
+include menu
+
+mixin header
+  +b.HEADER.header&attributes(attributes)
+    +e.__inner.container-fluid
+      .row.align-items-center.justify-md-content-between
+
+        a.page-header-logo.col-lg-1.col-xss-2(href="/")
+          +icon-svg('logo').logo
+
+        +menu.__menu.col-lg-4.col-xss-7.order-1.order-xss-0
+
+        +e.BUTTON.__toggle.col
+          +e.SPAN.__toggle-icon
+          +e.SPAN.__toggle-icon
+          +e.SPAN.__toggle-icon
+
+        +e.__hidden
+          +b.header__mobile.row.align-items-center
+
+            +e.A.mobile_link.d-block.d-md-none.order-3.order-xss-0(href='') О сервисе  
+
+            +e.__soc-net.text-right.d-none.d-xss-block
+              +e.__soc-net-inner
+                +e.A.__soc-net-item--fb(href='' target='_blank' title='Facebook')
+                  +icon-svg('fb')
+                +e.A.__soc-net-item--tw(href='' target='_blank' title='Twitter')
+                  +icon-svg('tw')
+
+            +e.btn-call.text-right
+              a.btn-border-grad(href="#callback") Войти
+              |                     
+              a.btn-grad(href="#callback") Зарегистрироваться
+
+
+        +e.__hidden.d-xss-none.order-2.order-xss-0
+          +e.__soc-net.text-right
+            +e.__soc-net-inner
+              +e.A.__soc-net-item--fb(href='' target='_blank' title='Facebook')
+                +icon-svg('fb')
+              +e.A.__soc-net-item--tw(href='' target='_blank' title='Twitter')
+                +icon-svg('tw')              

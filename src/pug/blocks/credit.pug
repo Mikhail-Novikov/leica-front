@@ -1,0 +1,44 @@
+mixin credit
+
+  section.section.credits-plus
+    .container
+      p.section-center-title Выгодные условия кредитования
+      
+      .credits-plus-items
+        .credits-plus-items__item
+          p.credits-plus-items__item-p-img
+            +icon-svg('paper-plane')
+
+          p.credits-plus-items__item-title Быстро
+
+          p.credits-plus-items__item-p Вы можете получить займ за 4 дня или быстрее. каждый день компании инвесторы заключают по 7 сделок
+
+        .credits-plus-items__item
+          p.credits-plus-items__item-p-img
+            +icon-svg('finances')
+
+          p.credits-plus-items__item-title Любой размер займа
+
+          p.credits-plus-items__item-p Вы получите столько денег, сколько необходимо для вашего бизнеса
+
+        .credits-plus-items__item
+          p.credits-plus-items__item-p-img
+            +icon-svg('contract')
+    
+          p.credits-plus-items__item-title Без сбора 
+            br
+            |докуменов
+
+          p.credits-plus-items__item-p Для принятия решения о выдаче займа нам нужна только банковская выписка. Вы можете отправить её по электронной почте.
+
+
+    .benefit-invest-form
+      .benefit-invest-form__wrap.container
+        p.benefit-invest-form__txt Рассчитайте сумму займа за 2 минуты
+        |         
+        form.section-form(action="")
+          input.section-form__input(type="text", placeholder="Название компании или ИП")
+          |             
+          button.btn-grad(type="submit") Узнать
+
+    .credits-plus-bg          

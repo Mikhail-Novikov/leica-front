@@ -1,0 +1,57 @@
+.smi-about{
+  .container{
+   
+  }
+  .slider{
+    margin-top: 70px;
+    margin-bottom: 50px;    
+  }
+  &-items {
+    position: relative;
+
+  }
+  &-item {
+    background: #f7f7f7;
+    padding: 30px 60px;
+    position: relative;
+
+  }
+
+  &-item__span-img {
+    display: block;
+    padding: 25px 0
+  }
+
+  &-item__link {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 14px;
+    border-bottom: none!important;
+    color: #cd457e;
+    text-decoration: none;
+    svg{
+      font-size: 12px;
+      position: absolute;
+      right: -15px;
+      top: 3px;
+      transition: 0.3s;
+    }
+    &:hover svg{
+      color: #d45f90;
+    }
+  }
+
+  &-item__p {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 10px 0
+  }
+  .swiper-button-prev {
+    left: -80px;
+  }
+  .swiper-button-next {
+    right: -80px;
+  }
+}
+

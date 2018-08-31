@@ -1,0 +1,15 @@
+.btn-also{
+  display: block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #6d6d6d;
+  background-color: transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  float: right;
+  cursor: pointer;
+  &:hover{
+    border-color: $color-link;
+  }
+}

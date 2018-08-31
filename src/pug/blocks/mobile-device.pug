@@ -1,0 +1,18 @@
+mixin mobile-device
+  section.mobile-device
+    .container
+      .mobile-device-content
+        p.mobile-device-content__p Leika в телефоне
+        |                 
+        .mobile-device-links
+          a.mobile-device-links__link(href="")
+            +icon-svg('app')
+          |                     
+          a.mobile-device-links__link(href="")
+            +icon-svg('g-play')
+          |                     
+          a.mobile-device-links__link(href="")
+            +icon-svg('w-store')
+
+      span.mobile-device-fix
+        img(src="img/content/phone.png", alt="")

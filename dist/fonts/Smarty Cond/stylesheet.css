@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Smarty Cond';
+  src: local('Smarty Cond Regular'), local('SmartyCond-Regular'),
+  url('../fonts/Smarty Cond/subset-SmartyCond-Regular.woff2') format('woff2'),
+  url('../fonts/Smarty Cond/subset-SmartyCond-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

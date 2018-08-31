@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <path id="ttkpa" d="M934.08 39.85c-.6.27-1.24.45-1.92.53a3.37 3.37 0 0 0 1.47-1.85c-.64.37-1.36.65-2.13.8a3.35 3.35 0 0 0-5.71 3.05 9.5 9.5 0 0 1-6.9-3.49 3.35 3.35 0 0 0 1.04 4.48 3.35 3.35 0 0 1-1.52-.42v.04a3.35 3.35 0 0 0 2.68 3.29 3.4 3.4 0 0 1-1.5.05 3.36 3.36 0 0 0 3.13 2.33 6.72 6.72 0 0 1-4.95 1.39c1.5.95 3.25 1.5 5.15 1.5 6.16 0 9.53-5.1 9.53-9.52v-.43a6.77 6.77 0 0 0 1.67-1.74z" />
+        <path id="ttkpb" d="M911 45a15 15 0 1 1 30 0 15 15 0 0 1-30 0z" />
+    </defs>
+    <g>
+        <g transform="translate(-910 -29)">
+            <use  xlink:href="#ttkpa" />
+        </g>
+        <g transform="translate(-910 -29)">
+            <use  fill-opacity="0" stroke="" stroke-miterlimit="50" xlink:href="#ttkpb" />
+        </g>
+    </g>
+</svg>

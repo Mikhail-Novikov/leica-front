@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>Главная — new/Frontend</title>
+    <!-- Meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#161b6e">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#161b6e">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/lib.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <!-- JS-->
+    <script src="js/lib.js"></script>
+    <script>
+      // Load and insert svg-symbols.svg
+      (function()
+      {
+        'use strict';
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function()
+        {
+          if (xhr.status >= 200 && xhr.status < 400)
+          {
+            document.body.insertAdjacentHTML('afterbegin', xhr.responseText);
+          }
+        };
+        xhr.open('GET', 'img/svg-symbols.svg', true);
+        xhr.send();
+      })();
+    </script>
+  </head>
+  <body class="page__body">
+    <div class="page__body-inner">
+      <header class="header">
+        <div class="header__inner container-fluid">
+          <div class="row align-items-center justify-md-content-between">
+            <a class="page-header-logo col-lg-1 col-xss-2" href="/">
+              <svg class="icon-svg-logo logo" role="img">
+                <use xlink:href="#icon-svg-logo"></use>
+              </svg>
+            </a>
+            <nav class="menu header__menu col-lg-4 col-xss-7 order-1 order-xss-0">
+              <div class="menu__inner">
+                <div class="menu__item menu__item--current">
+                  <a class="menu__link" href="">Получить заем</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Инвестировать</a>
+                </div>
+                <div class="menu__item d-none d-md-flex">
+                  <a class="menu__link" href="">О сервисе</a>
+                </div>
+              </div>
+            </nav>
+            <button class="header__toggle col">
+              <span class="header__toggle-icon"></span>
+              <span class="header__toggle-icon"></span>
+              <span class="header__toggle-icon"></span>
+            </button>
+            <div class="header__hidden">
+              <div class="header__mobile row align-items-center">
+                <a class="header__mobile_link d-block d-md-none order-3 order-xss-0" href="">О сервисе </a>
+                <div class="header__soc-net text-right d-none d-xss-block">
+                  <div class="header__soc-net-inner">
+                    <a class="header__soc-net-item header__soc-net-item--fb" href="" target="_blank" title="Facebook">
+                      <svg class="icon-svg-fb" role="img">
+                        <use xlink:href="#icon-svg-fb"></use>
+                      </svg>
+                    </a>
+                    <a class="header__soc-net-item header__soc-net-item--tw" href="" target="_blank" title="Twitter">
+                      <svg class="icon-svg-tw" role="img">
+                        <use xlink:href="#icon-svg-tw"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="header__btn-call text-right">
+                  <a class="btn-border-grad" href="#callback">Войти</a>
+                  <a class="btn-grad" href="#callback">Зарегистрироваться</a>
+                </div>
+              </div>
+            </div>
+            <div class="header__hidden d-xss-none order-2 order-xss-0">
+              <div class="header__soc-net text-right">
+                <div class="header__soc-net-inner">
+                  <a class="header__soc-net-item header__soc-net-item--fb" href="" target="_blank" title="Facebook">
+                    <svg class="icon-svg-fb" role="img">
+                      <use xlink:href="#icon-svg-fb"></use>
+                    </svg>
+                  </a>
+                  <a class="header__soc-net-item header__soc-net-item--tw" href="" target="_blank" title="Twitter">
+                    <svg class="icon-svg-tw" role="img">
+                      <use xlink:href="#icon-svg-tw"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main page__main">
+        <section class="promo-section promo-section--home">
+          <div class="container mb-sm-50 mb-35">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-xl-5">
+                <h1 class="promo-section__title">Кредиты
+                  <br/>для бизнеса</h1>
+                <p class="promo-section__p">с индивидуальной процентной ставкой</p>
+                <div class="promo-section-call">
+                  <div class="promo-section-call__span">Рассчитайте сумму займа</div>
+                  <form class="section-form" action="">
+                    <input class="section-form__input" type="text" placeholder="Название компании или ИП" />
+                    <button class="btn-grad" type="submit" title="Отправить мне письмо с рассчётом">Узнать</button>
+                  </form>
+                </div>
+                <div class="promo-section-video">
+                  <span class="promo-section-video__icon pulse">
+                    <img class="d-block" src="img/icons/promoiconsvg.svg" alt="" />
+                  </span>
+                  <a class="promo-section-video__p" href="#">Как это работает? </a>
+                </div>
+              </div>
+              <div class="promo-section-bg"></div>
+            </div>
+          </div>
+          <section class="promo-section-pluss">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-sm-3 promo-section-pluss__item">
+                  <p class="promo-section-pluss__item-title">46</p>
+                  <span class="promo-section-pluss__item-p">инвесторов уже зарегистрировано</span>
+                </div>
+                <div class="col-sm-3 promo-section-pluss__item">
+                  <p class="promo-section-pluss__item-title">18</p>
+                  <span class="promo-section-pluss__item-p">компаний уже получили займы</span>
+                </div>
+                <div class="col-sm-3 promo-section-pluss__item">
+                  <p class="promo-section-pluss__item-title">1 987 650</p>
+                  <span class="promo-section-pluss__item-p">рублей привлечено через Leika</span>
+                </div>
+                <div class="col-sm-3 promo-section-pluss__item">
+                  <p class="promo-section-pluss__item-title">8</p>
+                  <span class="promo-section-pluss__item-p">компаниям нужны займы сейчас </span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="section about-leika section--line">
+          <div class="container">
+            <p class="section-center-title">Коротко о Leika</p>
+            <p class="section-center-p text-center">Leika — это краудинвестинговая площадка, на которой компании получаются займы от частных инвесторов — обычных пользователей сервиса. Сделки заключаются онлайн.</p>
+          </div>
+        </section>
+        <section class="section credits-plus">
+          <div class="container">
+            <p class="section-center-title">Выгодные условия кредитования</p>
+            <div class="credits-plus-items">
+              <div class="credits-plus-items__item">
+                <p class="credits-plus-items__item-p-img">
+                  <svg class="icon-svg-paper-plane" role="img">
+                    <use xlink:href="#icon-svg-paper-plane"></use>
+                  </svg>
+                </p>
+                <p class="credits-plus-items__item-title">Быстро</p>
+                <p class="credits-plus-items__item-p">Вы можете получить займ за 4 дня или быстрее. каждый день компании инвесторы заключают по 7 сделок</p>
+              </div>
+              <div class="credits-plus-items__item">
+                <p class="credits-plus-items__item-p-img">
+                  <svg class="icon-svg-finances" role="img">
+                    <use xlink:href="#icon-svg-finances"></use>
+                  </svg>
+                </p>
+                <p class="credits-plus-items__item-title">Любой размер займа</p>
+                <p class="credits-plus-items__item-p">Вы получите столько денег, сколько необходимо для вашего бизнеса</p>
+              </div>
+              <div class="credits-plus-items__item">
+                <p class="credits-plus-items__item-p-img">
+                  <svg class="icon-svg-contract" role="img">
+                    <use xlink:href="#icon-svg-contract"></use>
+                  </svg>
+                </p>
+                <p class="credits-plus-items__item-title">Без сбора
+                  <br/>докуменов</p>
+                <p class="credits-plus-items__item-p">Для принятия решения о выдаче займа нам нужна только банковская выписка. Вы можете отправить её по электронной почте.</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-invest-form">
+            <div class="benefit-invest-form__wrap container">
+              <p class="benefit-invest-form__txt">Рассчитайте сумму займа за 2 минуты</p>
+              <form class="section-form" action="">
+                <input class="section-form__input" type="text" placeholder="Название компании или ИП" />
+                <button class="btn-grad" type="submit">Узнать</button>
+              </form>
+            </div>
+          </div>
+          <div class="credits-plus-bg"> </div>
+        </section>
+        <section class="section home-terms">
+          <p class="section-center-title">Условия </p>
+          <div class="container">
+            <div class="row home-terms-items">
+              <div class="col-sm-6 home-terms-item">
+                <div class="home-terms-item-pic">
+                  <svg class="icon-svg-ruble" role="img">
+                    <use xlink:href="#icon-svg-ruble"></use>
+                  </svg>
+                </div>
+                <p class="home-terms-item__p">займы от 100 000 руб. до 10 000 000 руб.</p>
+              </div>
+              <div class="col-sm-6 home-terms-item">
+                <div class="home-terms-item-pic">
+                  <svg class="icon-svg-auction" role="img">
+                    <use xlink:href="#icon-svg-auction"></use>
+                  </svg>
+                </div>
+                <p class="home-terms-item__p">у компании не должно быть долгов и крупных арбитражей</p>
+              </div>
+              <div class="col-sm-6 home-terms-item">
+                <div class="home-terms-item-pic">
+                  <svg class="icon-svg-calendar" role="img">
+                    <use xlink:href="#icon-svg-calendar"></use>
+                  </svg>
+                </div>
+                <p class="home-terms-item__p">на срок от 1 дня до 1 года</p>
+              </div>
+              <div class="col-sm-6 home-terms-item">
+                <div class="home-terms-item-pic">
+                  <span>12</span>
+                </div>
+                <p class="home-terms-item__p">компания существует более 12 месяцев</p>
+              </div>
+              <div class="col-sm-6 home-terms-item">
+                <div class="home-terms-item-pic">
+                  <span>%</span>
+                </div>
+                <p class="home-terms-item__p">ставка 10-20% годовых</p>
+              </div>
+              <div class="col-sm-6 home-terms-item">
+                <div class="home-terms-item-pic">
+                  <svg class="icon-svg-contract" role="img">
+                    <use xlink:href="#icon-svg-contract"></use>
+                  </svg>
+                </div>
+                <p class="home-terms-item__p">компания должна иметь регулярный безналичный оборот по банковскому счету более 100 000 руб. в месяц</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="credits-table">
+          <div class="container">
+            <p class="section-center-title">Последние запросы на получение займа</p>
+            <table class="credits-table-tablest js-adapt-table">
+              <thead>
+                <tr>
+                  <th>
+                    <p>Рейтинг</p>
+                  </th>
+                  <th>
+                    <p>Заёмщик</p>
+                  </th>
+                  <th>
+                    <p>Тип бизнеса</p>
+                  </th>
+                  <th>
+                    <p>Цель займа</p>
+                  </th>
+                  <th>
+                    <p>Ставка</p>
+                  </th>
+                  <th>
+                    <p>Сумма займа</p>
+                  </th>
+                  <th>
+                    <p>Срок займа</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="adapt-table--none">
+                    <p>С</p>
+                  </td>
+                  <td>
+                    <p>ООО</p>
+                  </td>
+                  <td class="adapt-table--none">
+                    <p>Розничная торговля</p>
+                  </td>
+                  <td class="adapt-table--none">
+                    <p>Закупка товара</p>
+                  </td>
+                  <td class="adapt-table--none">
+                    <p>25%</p>
+                  </td>
+                  <td>
+                    <p class="price">1 500 000 р.</p>
+                    <button class="btn-also js-open-adapt-w"> </button>
+                  </td>
+                  <td class="adapt-table--none">
+                    <p>8 мес.</p>
+                  </td>
+                  <td class="cell-container">
+                    <div class="adapt-w">
+                      <button class="btn-also js-close-adapt-w"> </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section home-reviews">
+          <div class="container">
+            <p class="section-center-title">Отзывы заёмщиков</p>
+            <p class="section-center-p">Способ получения монотонно диссонирует фрагментарный квазар. Классицизм, в первом приближении, представляет собой канон. Реакция Арбузова, вследствие квантового характера явления, заставляет композиционный енамин, именно об этом комплексе
+              движущих сил писал З.Фрейд в теории сублимации.</p>
+          </div>
+          <div class="container">
+            <div class="slider slider-five swiper-container home-reviews-items">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <span class="home-reviews-items__spanimg">
+                    <img src="img/content/r1.png" alt="" />
+                  </span>
+                  <div class="home-reviews-items">
+                    <p class="home-reviews-items__title">Алексей Уваров</p>
+                    <p class="home-reviews-items__p">инвестирует с помощью Leika 8 месяцев</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="home-reviews-items__spanimg">
+                    <img src="img/content/r1.png" alt="" />
+                  </span>
+                  <div class="home-reviews-items">
+                    <p class="home-reviews-items__title">Алексей Уваров</p>
+                    <p class="home-reviews-items__p">инвестирует с помощью Leika 8 месяцев</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="home-reviews-items__spanimg">
+                    <img src="img/content/r1.png" alt="" />
+                  </span>
+                  <div class="home-reviews-items">
+                    <p class="home-reviews-items__title">Алексей Уваров</p>
+                    <p class="home-reviews-items__p">инвестирует с помощью Leika 8 месяцев</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="home-reviews-items__spanimg">
+                    <img src="img/content/r1.png" alt="" />
+                  </span>
+                  <div class="home-reviews-items">
+                    <p class="home-reviews-items__title">Алексей Уваров</p>
+                    <p class="home-reviews-items__p">инвестирует с помощью Leika 8 месяцев</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="home-reviews-items__spanimg">
+                    <img src="img/content/r1.png" alt="" />
+                  </span>
+                  <div class="home-reviews-items">
+                    <p class="home-reviews-items__title">Алексей Уваров</p>
+                    <p class="home-reviews-items__p">инвестирует с помощью Leika 8 месяцев</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="home-reviews-items__spanimg">
+                    <img src="img/content/r1.png" alt="" />
+                  </span>
+                  <div class="home-reviews-items">
+                    <p class="home-reviews-items__title">Алексей Уваров</p>
+                    <p class="home-reviews-items__p">инвестирует с помощью Leika 8 месяцев</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination justify-content-center d-flex"></div>
+            </div>
+          </div>
+        </section>
+        <section class="mobile-device">
+          <div class="container">
+            <div class="mobile-device-content">
+              <p class="mobile-device-content__p">Leika в телефоне</p>
+              <div class="mobile-device-links">
+                <a class="mobile-device-links__link" href="">
+                  <svg class="icon-svg-app" role="img">
+                    <use xlink:href="#icon-svg-app"></use>
+                  </svg>
+                </a>
+                <a class="mobile-device-links__link" href="">
+                  <svg class="icon-svg-g-play" role="img">
+                    <use xlink:href="#icon-svg-g-play"></use>
+                  </svg>
+                </a>
+                <a class="mobile-device-links__link" href="">
+                  <svg class="icon-svg-w-store" role="img">
+                    <use xlink:href="#icon-svg-w-store"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <span class="mobile-device-fix">
+              <img src="img/content/phone.png" alt="" />
+            </span>
+          </div>
+        </section>
+        <section class="section smi-about">
+          <div class="container">
+            <p class="section-center-title">СМИ о нас</p>
+            <div class="smi-about-items">
+              <div class="slider slider-two swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide smi-about-item">
+                    <span class="smi-about-item__span-img">
+                      <img src="img/content/smi1.png" alt="" />
+                    </span>
+                    <a class="smi-about-item__link" href="">Читать
+                      <svg class="icon-svg-external" role="img">
+                        <use xlink:href="#icon-svg-external"></use>
+                      </svg>
+                    </a>
+                    <p class="smi-about-item__p">Контрапункт дает потребительский конкурент. Дольник, как принято считать, решительно аннигилирует межличностный метод изучения рынка, учитывая результат предыдущих…</p>
+                  </div>
+                  <div class="swiper-slide smi-about-item">
+                    <span class="smi-about-item__span-img">
+                      <img src="img/content/smi2.png" alt="" />
+                    </span>
+                    <a class="smi-about-item__link" href="">Читать
+                      <svg class="icon-svg-external" role="img">
+                        <use xlink:href="#icon-svg-external"></use>
+                      </svg>
+                    </a>
+                    <p class="smi-about-item__p">Эпитет, суммируя приведенные примеры, правомочен. Итак, ясно, что несобственно-прямая речь программирует полифонический роман. Продукт, согласно традиционным…</p>
+                  </div>
+                  <div class="swiper-slide smi-about-item">
+                    <span class="smi-about-item__span-img">
+                      <img src="img/content/smi1.png" alt="" />
+                    </span>
+                    <a class="smi-about-item__link" href="">Читать
+                      <svg class="icon-svg-external" role="img">
+                        <use xlink:href="#icon-svg-external"></use>
+                      </svg>
+                    </a>
+                    <p class="smi-about-item__p">Контрапункт дает потребительский конкурент. Дольник, как принято считать, решительно аннигилирует межличностный метод изучения рынка, учитывая результат предыдущих…</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button">
+                <div class="swiper-button-next">
+                  <svg class="icon-svg-ic_arrow_right" role="img">
+                    <use xlink:href="#icon-svg-ic_arrow_right"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev">
+                  <svg class="icon-svg-ic_arrow_left" role="img">
+                    <use xlink:href="#icon-svg-ic_arrow_left"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <div class="credits-plus-form">
+          <div class="credits-plus-form__wrap container">
+            <p class="credits-plus-form__txt">Рассчитайте сумму займа за 2 минуты</p>
+            <form class="section-form" action="">
+              <input class="section-form__input" type="text" placeholder="Название компании или ИП" />
+              <button class="btn btn-grad" type="submit">Узнать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="page-footer-wrap container">
+          <div class="page-footer-item item--logo">
+            <a class="page-footer-item__logo" href="">
+              <svg class="icon-svg-logo-f" role="img">
+                <use xlink:href="#icon-svg-logo-f"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="page-footer-item item--menu">
+            <a class="page-footer-item__menu-a" href="#">Получить заем</a>
+            <a class="page-footer-item__menu-a active" href="#">Инвестировать</a>
+            <a class="page-footer-item__menu-a" href="#">Декларация о рисках</a>
+            <a class="page-footer-item__menu-a" href="#">Правила и условия</a>
+            <a class="page-footer-item__menu-a" href="#">Конфиденциальность</a>
+          </div>
+          <div class="page-footer-item item--menu">
+            <a class="page-footer-item__menu-a" href="#">О сервисе</a>
+            <a class="page-footer-item__menu-a" href="#">Итоги 2017 года</a>
+            <a class="page-footer-item__menu-a" href="#">О краудинвестинге</a>
+            <a class="page-footer-item__menu-a" href="#">Как работает Leika</a>
+            <a class="page-footer-item__menu-a" href="#">Контакты</a>
+          </div>
+          <div class="page-footer-item item--contacts">
+            <p class="page-footer-item__contacts-p">Свяжитесь с нами</p>
+            <a class="page-footer-item__contacts-a" href="">8 800 345-89-87</a>
+            <p class="page-footer-item__p">101000, Москва, Краснопресненская набережная, 13, офис 45</p>
+            <div class="page-footer-item__social">
+              <a class="page-header-social__a" href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="page-header-social__a" href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer-copy container">
+          <div class="page-footer-copy__p">© Leika. Все права защищены</div>
+          <div class="page-footer-copy__dev">Разработано в
+            <span class="page-footer-copy__dev-span">
+              <img src="i/svg/empire.svg" alt="" />Empire Digital</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS-->
+    <script src="js/app.js" async=""></script>
+  </body>
+</html>

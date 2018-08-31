@@ -1,0 +1,56 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+
++page(pagesList.uiKit.title)
+  +b.MAIN(style="padding: 15px;")
+    h1 #{pagesList.uiKit.title} - #{pkg.description}
+
+    h2 Colors
+    table(style="border-collapse: collapse; width: 100%; max-width: 1000px;")
+      each color in ['#fcfcfc', '#f9f9fc', '#ccc0d0', '#f9a801', '#cb57ac', '#2ec1ff', '#5c3184', '#161b6e', 'linear-gradient(136deg, #432091 0%, #c3396a 100%)']
+        tr
+          td(style="padding: 5px; border: 1px solid #ccc;"): div(style=`width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ccc; background: ${color};`)
+          td(style="padding: 5px; border: 1px solid #ccc;"): code= color
+
+    h2 Fonts
+    table(style="border-collapse: collapse; width: 100%; max-width: 1000px;")
+      each font in ['Smarty Cond:400:normal', 'PT Sans:400:normal', 'PT Sans:400:italic', 'PT Sans:700:normal', 'PT Sans:700:italic']
+        - font = font.split(':');
+        tr
+          td(style="padding: 5px; border: 1px solid #ccc;"): div(style=`font-family: ${font[0]}; font-weight: ${font[1]}; font-style: ${font[2]};`)= font[0]
+          td(style="padding: 5px; border: 1px solid #ccc;"): code= font[1]
+          td(style="padding: 5px; border: 1px solid #ccc;"): code= font[2]
+
+    h2 Content
+    +b.content
+      h1 Heading h1
+      h2 Heading h2
+      h3 Heading h3
+      h4 Heading h4
+      h5 Heading h5
+      h6 Heading h6
+      p 8, 12 и 14 сентября зрителей Телеканала RU.TV ждут три незабываемых вечера фестиваля «Белые Ночи 2017».
+      p Каждое лето в Северной столице проходит международный фестиваль «Белые ночи», который 25 лет назад перевернул представление о мире музыки и продолжает делать это снова и снова. Талантливые молодые исполнители со всего мира выходят на сцену концертного зала «Октябрьский» вместе с самыми популярными исполнителями, которыми восхищаются миллионы зрителей.
+      p Три дня потрясающих хитов, самые неожиданные образы, выступления и слёзы радости от победы - фестиваль «Белые ночи» считается одним из самых долгожданных и ярких событий на берегах Невы!
+      p Зрители Телеканала RU.TV смогут в полной мере насладиться невероятным шоу! Нас ждут три музыкальных вечера - 8, 12 и 14 сентября, начало в 20:00.
+      p Вы увидите самые захватывающие моменты фестиваля - выступления молодых артистов, российских звёзд и мэтров мировой сцены. Участники фестиваля «Белые ночи» - Ани Лорак, Елена Север и Стас Михайлов, Полина Гагарина, ВладиМир, Леонид Агутин, ЮрКисс, Таисия Повалий, группа Queens и другие.
+      p Специальные гости - группы Scorpions и Busta Rhymes.
+      p Ведущие музыкального конкурса - Елена Север и Алексей Воробьев.
+
+    h2 Form elements
+    .mb-35
+      +b.INPUT.field(type='text' placeholder='Ваше имя')
+      +b.INPUT.field(type='text' placeholder='Ваше имя' disabled='')
+    .mb-35
+      +b.BUTTON.btn-grad Button
+      +b.A.btn-grad(href='') Link
+      +b.BUTTON.btn-grad(disabled='') Button Disabled
+    .mb-35.p-10.d-inline-block.bg-dark
+      +b.BUTTON.btn-border Button
+      +b.A.btn-border(href='') Link
+      +b.BUTTON.btn-border(disabled='') Button Disabled
+    .mb-35
+      +b.BUTTON.btn-border-grad Button
+      +b.A.btn-border-grad(href='') Link
+      +b.BUTTON.btn-border-grad(disabled='') Button Disabled

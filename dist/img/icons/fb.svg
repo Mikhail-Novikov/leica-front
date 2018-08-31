@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <path id="zjyda" d="M953 45a15 15 0 1 1 30 0 15 15 0 0 1-30 0z" />
+        <path id="zjydb" d="M969.24 42.67V41.5c0-.18 0-.31.02-.4.02-.1.06-.2.12-.29.05-.1.15-.16.28-.2.13-.03.3-.05.52-.05h1.17v-2.32h-1.88c-1.09 0-1.87.26-2.35.77-.47.5-.71 1.26-.71 2.25v1.4H965v2.32h1.41v6.75h2.83v-6.75h1.88l.25-2.32z" />
+    </defs>
+    <g>
+        <g transform="translate(-952 -29)">
+            <use fill-opacity="0" stroke="" stroke-miterlimit="50" xlink:href="#zjyda" />
+        </g>
+        <g clip-path="url(#clip-BF0056FF-726F-4957-A90A-EEAA8B3164E8)" transform="translate(-952 -29)">
+            <use  xlink:href="#zjydb" />
+        </g>
+    </g>
+</svg>

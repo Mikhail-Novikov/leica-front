@@ -1,0 +1,28 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+include blocks/promo-home
+include blocks/about
+include blocks/credit
+include blocks/home-therms
+include blocks/credits-table
+include blocks/reviews
+include blocks/mobile-device
+include blocks/credits-plus-form
+include blocks/smi
+include blocks/header
+include blocks/footer
+
++page(pagesList.index.title)
+  +header
+  +b.main.__main
+    +promo-home
+    +about
+    +credit
+    +home-therms
+    +credits-table
+    +home-reviews
+    +mobile-device
+    +smi
+    +credits-plus-form
+  +footer.__footer
