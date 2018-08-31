@@ -1326,6 +1326,10 @@ button.swiper-pagination-bullet {
   display: block;
 }
 
+.page-footer-item__logo svg {
+  font-size: 3.875rem;
+}
+
 .page-footer-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -1333,18 +1337,20 @@ button.swiper-pagination-bullet {
 
 .page-footer-item {
   width: 25%;
-  padding-right: 1.875rem .page-footer-item __menu-a;
-  padding-right-color: #6d6d6d;
-  padding-right-text-transform: uppercase;
-  padding-right-font-size: 0.875rem;
-  padding-right-border-bottom: none;
-  padding-right-line-height: 1.375rem;
-  padding-right-display: block;
-  padding-right-padding: 0.625rem 0;
+  padding-right: 1.875rem;
 }
 
-.page-footer-item__menu-a:focus,
-.page-footer-item__menu-a:hover {
+.page-footer-item__menu-a {
+  color: #6d6d6d;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  border-bottom: none;
+  line-height: 1.375rem;
+  display: block;
+  padding: 0 0 1.25rem 0;
+}
+
+.page-footer-item__menu-a:focus, .page-footer-item__menu-a:hover {
   border-bottom: none !important;
 }
 
