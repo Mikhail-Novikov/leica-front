@@ -5,6 +5,8 @@
   line-height: $line-height-base;
   font-family: $font-family-base;
   background: $color-base-bg;
+  min-width: 320px;
+  overflow-x: hidden;
 
   &__body-inner {
     overflow: hidden;
@@ -36,10 +38,17 @@
       }
     }
   }
+  
+  &__content {
+    
+  }
+
 
   @include media-breakpoint-up(lg) {
-    &__main {
+
+    &__main, &__content {
       margin-top: 70px;
+      min-height: 400px;
     }
   }
 }

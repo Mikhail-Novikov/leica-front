@@ -1,7 +1,9 @@
 table.credits-table-tablest {
   width: 100%;
   font-size: 12px;
-  margin: 70px 0 40px
+  margin: 0;
+  position: relative;
+  opacity: 0;
 }
 table.credits-table-tablest thead * {
   text-align: center;
@@ -15,11 +17,8 @@ table.credits-table-tablest tbody tr {
   padding: 3px 0;
   margin: 3px 0!important
 }
-table.credits-table-tablest tbody td {
-
-}
-table.credits-table-tablest tbody td p {
-
+table.credits-table-tablest tbody td {}
+table.credits-table-tablest tbody td:not(.cell-container) p {
   padding: 10px 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -27,38 +26,47 @@ table.credits-table-tablest tbody td p {
   font-size: 12px;
   background: #f6f6f6;
   overflow-y: auto;
-
   vertical-align: middle;
 }
-table.credits-table-tablest tbody td:nth-last-child(2) p{
+table.credits-table-tablest tbody td:nth-last-child(2) p {
   border-right: 1px solid transparent;
 }
 table.credits-table-tablest {
-  tbody tr{
+  tbody tr {
     position: relative;
+      border-radius: 4px;    
+    td{
+      box-shadow: 3px 0px #f6f6f6;
+      p.price {
+        border-right-width: 0;
+      } 
+    }
+
   }
-  .cell-container{
+  .cell-container {
     background-color: #fff;
-    position: relative;
-  }
-  .btn-also{
-    margin: 22px 15px;
-  } 
-  .price{
-    border-right: 1px solid transparent;
-    display: inline-block;    
-  } 
-  .adapt-w{
     position: absolute;
-    left: 0;
-    top: 5px;
-    width: 100%;
+    right: 0;
+  }
+  .btn-also {
+    margin: 22px 15px;
+  }
+  .price {
+    border-right: 1px solid transparent;
+    display: inline-block;
+  }
+  .adapt-w {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 250px;
     height: 176px;
     border-radius: 4px;
     border: 1px solid #9a9a9a;
     background-color: #fff;
     z-index: 15;
-    .btn-also{
+    .btn-also {
       transform: rotate(45deg);
       border-color: $color-link;
       position: absolute;
@@ -67,40 +75,69 @@ table.credits-table-tablest {
       margin: 0;
       transition: rotate 0.6s;
     }
-
   }
   .adapt-table--none {
     display: none;
   }
-  .cell-container{
-    display: none;
+  .cell-container {
     height: 58px;
   }
-
-
+  .adapt-w {
+    padding: 15px;
+    p {
+      margin-bottom: 8px;
+    }
+    .tt-1, .tcm-1 {
+      color: #6d6d6d;
+      font-family: "Montserrat";
+      font-size: 10px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .adapt-w-l {
+      border-right: 1px solid #6d6d6d;
+    }
+    p.tt {
+      color: #000000;
+      font-family: "Montserrat";
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .adapt-w-r p {
+      color: #6d6d6d;
+      font-size: 10px;
+    }
+  }
   @include media-breakpoint-up(sm) {
-    .btn-also{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    tbody tr td p.price {
+      border-right-width: 1px;
+    }
+    .btn-also {
       display: none;
-    }  
+    }
     .adapt-table--none {
       display: table-cell;
     }
-    tbody td p{
-        display: block;
-        padding: 22px 20px;
-    }    
-    .price{
+    tbody td p {
+      display: block;
+      padding: 22px 20px;
+    }
+    .price {
       border-right: 1px solid #9a9a9a;
-      display: block;    
-    } 
+      display: block;
+    }
   }
   @include media-breakpoint-up(md) {
-     font-size: 16px;
-    tbody td p{
+    font-size: 16px;
+    tbody td p {
       font-size: 14px;
-
     }
-
   }
-
+}
+@include media-breakpoint-up(md) {
+  .credits-table {
+    margin-top: 40px;
+  }
 }

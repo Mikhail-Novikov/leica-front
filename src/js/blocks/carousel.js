@@ -40,18 +40,22 @@ function swiper() {
           watchOverflow: true,
           breakpoints: {
             1200: {
-              slidesPerView: 2,
+              slidesPerView: 5,
               spaceBetween: 20,                     
             },
 
             850: {
-              slidesPerView: 2,
+              slidesPerView: 5,
               spaceBetween: 15,              
             },
             650: {
+              slidesPerView: 3,
+              spaceBetween: 15,              
+            },
+            400: {
               slidesPerView: 1,
               spaceBetween: 15,              
-            }            
+            },                       
           },
           pagination: {
               el: '.swiper-pagination',
@@ -70,6 +74,11 @@ function swiper() {
           },
           watchOverflow: true,
           breakpoints: {
+            768: {
+              spaceBetween: 15,
+              nav: false,
+                         
+            },
             650: {
               slidesPerView: 1,
               spaceBetween: 15,

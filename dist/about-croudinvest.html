@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>О Кроудинвестинге — new/Frontend</title>
+    <!-- Meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/lib.min.css" />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <!-- JS-->
+    <script>
+      // Load and insert svg-symbols.svg
+      (function()
+      {
+        'use strict';
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function()
+        {
+          if (xhr.status >= 200 && xhr.status < 400)
+          {
+            document.body.insertAdjacentHTML('afterbegin', xhr.responseText);
+          }
+        };
+        xhr.open('GET', 'img/svg-symbols.svg', true);
+        xhr.send();
+      })();
+    </script>
+  </head>
+  <body class="page__body">
+    <div class="page__body-inner">
+      <header class="header">
+        <div class="header__inner container-fluid">
+          <div class="row align-items-center justify-md-content-between">
+            <a class="page-header-logo col-lg-1 col-xss-2" href="/">
+              <svg class="icon-svg-logo logo" role="img">
+                <use xlink:href="#icon-svg-logo"></use>
+              </svg>
+            </a>
+            <nav class="menu header__menu col-lg-4 col-xss-7 order-1 order-xss-0">
+              <div class="menu__inner">
+                <div class="menu__item menu__item--current">
+                  <a class="menu__link" href="">Получить заем</a>
+                </div>
+                <div class="menu__item">
+                  <a class="menu__link" href="">Инвестировать</a>
+                </div>
+                <div class="menu__item d-none d-md-flex">
+                  <a class="menu__link" href="">О сервисе</a>
+                </div>
+              </div>
+            </nav>
+            <button class="header__toggle col">
+              <span class="header__toggle-icon"></span>
+              <span class="header__toggle-icon"></span>
+              <span class="header__toggle-icon"></span>
+            </button>
+            <div class="header__hidden">
+              <div class="header__mobile row align-items-center">
+                <a class="header__mobile_link d-block d-md-none order-3 order-xss-0" href="">О сервисе </a>
+                <div class="header__soc-net text-right d-none d-xss-block">
+                  <div class="header__soc-net-inner">
+                    <a class="header__soc-net-item header__soc-net-item--fb" href="" target="_blank" title="Facebook">
+                      <svg class="icon-svg-fb" role="img">
+                        <use xlink:href="#icon-svg-fb"></use>
+                      </svg>
+                    </a>
+                    <a class="header__soc-net-item header__soc-net-item--tw" href="" target="_blank" title="Twitter">
+                      <svg class="icon-svg-tw" role="img">
+                        <use xlink:href="#icon-svg-tw"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="header__btn-call text-right">
+                  <a class="btn-border-grad" href="#callback">Войти</a>
+                  <a class="btn-grad" href="#callback">Зарегистрироваться</a>
+                </div>
+              </div>
+            </div>
+            <div class="header__hidden d-xss-none order-2 order-xss-0">
+              <div class="header__soc-net text-right">
+                <div class="header__soc-net-inner">
+                  <a class="header__soc-net-item header__soc-net-item--fb" href="" target="_blank" title="Facebook">
+                    <svg class="icon-svg-fb" role="img">
+                      <use xlink:href="#icon-svg-fb"></use>
+                    </svg>
+                  </a>
+                  <a class="header__soc-net-item header__soc-net-item--tw" href="" target="_blank" title="Twitter">
+                    <svg class="icon-svg-tw" role="img">
+                      <use xlink:href="#icon-svg-tw"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__content content" role="main">
+        <h1 class="page__title">О краудинвестинге</h1>
+        <p class="page__text">Вам наверняка знаком краудфандинг — сбор пожертвований через специальные интернет-площадки. Краудинвестинг работает по-другому, но также просто. Есть три стороны — площадка, инвесторы и компании. Компании хотят получить деньги на развитие, инвесторы
+          хотят заработать. Площадка помогает инвесторам выбрать лучшие компании, рассчитать доходность, оформить документы и заключить сделки. Раньше инвесторы тратили на это время и деньги. Площадка делает это бесплатно и быстро в режиме онлайн.</p>
+        <p
+          class="page__text">Важно, что инвесторы всегда заключают сделки напрямую с компаниями. Площадка — это не фонд или банк.</p>
+          <img class="page__img" src="img/content/acri.png" alt="" role="presentation" />
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="page__text">Вам наверняка знаком краудфандинг — сбор пожертвований через специальные интернет-площадки. Краудинвестинг работает по-другому, но также просто. Есть три стороны — площадка, инвесторы и компании. Компании хотят получить деньги на развитие,
+                инвесторы хотят заработать. Площадка помогает инвесторам выбрать лучшие компании, рассчитать доходность, оформить документы и заключить сделки. </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="page__text">Ваш доход зависит от вида сделки и компании, в которую вы инвестируете. Вы можете приобрести долю в растущем бизнесе или акции. Через 2-3 года компания может кратно увеличить выручку. Тогда стоимость вашей доли вырастет в 10-15 раз.</p>
+            </div>
+          </div>
+          <blockquote class="page__blockquote">Ваш доход зависит от вида сделки и компании, в которую вы инвестируете. Вы можете приобрести долю в растущем бизнесе или акции. Через 2-3 года компания может кратно увеличить выручку. Тогда стоимость вашей доли вырастет в 10-15 раз.</blockquote>
+          <p
+            class="page__text">Вам наверняка знаком краудфандинг — сбор пожертвований через специальные интернет-площадки. Краудинвестинг работает по-другому, но также просто. Есть три стороны — площадка, инвесторы и компании. Компании хотят получить деньги на развитие, инвесторы
+            хотят заработать. Площадка помогает инвесторам выбрать лучшие компании, рассчитать доходность, оформить документы и заключить сделки. </p>
+      </main>
+      <div class="credits-plus-form">
+        <div class="credits-plus-form__wrap container">
+          <p class="credits-plus-form__txt">Рассчитайте сумму займа за 2 минуты</p>
+          <form class="section-form" action="">
+            <input class="section-form__input" type="text" placeholder="Название компании или ИП" />
+            <button class="btn btn-grad" type="submit">Узнать</button>
+          </form>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="page-footer-wrap container">
+          <div class="page-footer-item item--logo d-none d-xss-block">
+            <a class="page-footer-item__logo" href="">
+              <svg class="icon-svg-logo-f" role="img">
+                <use xlink:href="#icon-svg-logo-f"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="page-footer-item item--contacts order-sm-2">
+            <a class="page-footer-item__logo d-block d-xss-none" href="#">
+              <svg class="icon-svg-logo-f" role="img">
+                <use xlink:href="#icon-svg-logo-f"></use>
+              </svg>
+            </a>
+            <p class="page-footer-item__contacts-p">Свяжитесь с нами</p>
+            <a class="page-footer-item__contacts-a" href="">8 800 345-89-87</a>
+            <p class="page-footer-item__p">101000, Москва, Краснопресненская набережная, 13, офис 45</p>
+            <div class="page-footer-item__social">
+              <a class="page-footer-social__a" href="#">
+                <svg class="icon-svg-fb" role="img">
+                  <use xlink:href="#icon-svg-fb"></use>
+                </svg>
+              </a>
+              <a class="page-footer-social__a" href="#">
+                <svg class="icon-svg-tw" role="img">
+                  <use xlink:href="#icon-svg-tw"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="page-footer-item item--menu order-sm-1">
+            <a class="page-footer-item__menu-a" href="#">Получить заем</a>
+            <a class="page-footer-item__menu-a active" href="#">Инвестировать</a>
+            <a class="page-footer-item__menu-a" href="#">Декларация о рисках</a>
+            <a class="page-footer-item__menu-a" href="#">Правила и условия</a>
+            <a class="page-footer-item__menu-a" href="#">Конфиденциальность</a>
+          </div>
+          <div class="page-footer-item item--menu order-sm-1">
+            <a class="page-footer-item__menu-a" href="#">О сервисе</a>
+            <a class="page-footer-item__menu-a" href="#">Итоги 2017 года</a>
+            <a class="page-footer-item__menu-a" href="#">О краудинвестинге</a>
+            <a class="page-footer-item__menu-a" href="#">Как работает Leika</a>
+            <a class="page-footer-item__menu-a" href="#">Контакты</a>
+          </div>
+        </div>
+        <div class="page-footer-copy container">
+          <div class="page-footer-copy__p">© Leika. Все права защищены</div>
+          <a class="page-footer-copy__dev" href="#">Разработано в
+            <span class="page-footer-copy__dev-span">
+              <svg class="icon-svg-empire_logo" role="img">
+                <use xlink:href="#icon-svg-empire_logo"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <!-- JS-->
+    <script src="js/lib.js">
+    </script>
+    <script src="js/app.js" async=""></script>
+  </body>
+</html>

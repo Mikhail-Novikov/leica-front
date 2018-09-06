@@ -3,8 +3,8 @@
    
   }
   .slider{
-    margin-top: 70px;
-    margin-bottom: 50px;    
+    margin-top: 0;
+    margin-bottom: 20px;    
   }
   &-items {
     position: relative;
@@ -12,20 +12,20 @@
   }
   &-item {
     background: #f7f7f7;
-    padding: 30px 60px;
+    padding: 30px 25px;
     position: relative;
-
+    height: 230px;
   }
 
   &-item__span-img {
     display: block;
-    padding: 25px 0
+    padding: 25px 0 10px
   }
 
   &-item__link {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 15px;
+    right: 30px;
     font-size: 14px;
     border-bottom: none!important;
     color: #cd457e;
@@ -45,13 +45,56 @@
   &-item__p {
     font-size: 13px;
     line-height: 22px;
-    margin: 10px 0
+    margin: 10px 0;
+    height: 6.6em;
+    overflow: hidden;
   }
   .swiper-button-prev {
-    left: -80px;
+    left: -30px;
+    display: none;
+    svg{
+      font-size: 40px;      
+    }
+
   }
   .swiper-button-next {
-    right: -80px;
+    right: -30px;
+    display: none;
+    svg{
+      font-size: 40px;      
+    }    
   }
+
+  @include media-breakpoint-up(xss) {
+    &-item {
+      padding: 30px 60px;
+    }
+    .slider{
+      margin-top: 70px;
+      margin-bottom: 50px;    
+    }
+
+  }
+
+  @include media-breakpoint-up(sm) {
+    &-item__link {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }  
+    .swiper-button-prev, .swiper-button-next{
+      display: block;
+    } 
+  }
+  @include media-breakpoint-up(md) {
+    .swiper-button-prev {
+      left: -80px;
+    }
+    .swiper-button-next {
+      right: -80px;
+    }
+  }
+
+
 }
 

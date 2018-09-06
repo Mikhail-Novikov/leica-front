@@ -16,15 +16,15 @@ $grid-breakpoints: (
   sm: 768px,
   md: 1024px,
   lg: 1280px,
-  xl: 1600px
+  xl: 1920px
 );
 $container-max-widths: (
-  xs: 620px,
-  xss: 705px,  
-  sm: 990px,
+  xs: 95%,
+  xss: 650px,  
+  sm: 768px,
   md: 990px,
   lg: 1150px,
-  xl: 1460px  
+  xl: 1200px  
 );
 $grid-columns: 12;
 $grid-gutter-width: 30px;

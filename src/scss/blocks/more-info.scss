@@ -1,0 +1,44 @@
+.more-info{
+  margin-top: 15px;
+  svg{
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  a{
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #6d6d6d;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover{
+      color: #cd457e;
+    }
+  }
+  &:hover svg{
+    animation: rotate-more 0.7s infinite linear;
+  }
+
+  @include media-breakpoint-up(xss) {
+    margin-top: 40px;  
+    svg{
+      font-size: 22px;
+    }
+    a{
+      font-size: 14px;
+    }
+  }
+
+
+
+}
+@keyframes rotate-more {
+  0%  {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}

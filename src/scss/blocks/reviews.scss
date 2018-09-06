@@ -1,13 +1,17 @@
-section.home-reviews .section-center-p {
-    max-width: 650px;
-    margin: 20px auto;
-    padding-top: 40px;
-    text-align: center;
-    background: url(../i/svg/reviewsicon.svg) top center no-repeat;
-}
+.home-reviews {
+	.section-center-p {
+		max-width: 650px;
+		margin: 20px auto;
+		text-align: center;
+	}
 
-.home-reviews-items__spanimg img {
-    margin: 20px auto;
+	&-items__spanimg img {
+		margin: 20px auto;
+	}
+ @include media-breakpoint-down(sm) {
+  padding-bottom: 0;
+ }
+
 }
 
 .home-reviews-items__title {
@@ -21,11 +25,20 @@ section.home-reviews .section-center-p {
 
 .home-reviews-items .swiper-slide-active .home-reviews-items__title {
     display: block;
+    font-size: 18px;
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }    
 }
 .home-reviews-items .home-reviews-items{
     position: absolute;      
     top: 210px;
-    width: 100%;     
+    width: 250px;
+    transform: translateX(-50%);
+    left: 50%; 
+    @include media-breakpoint-down(xss) {
+        top: 150px;
+    }    
 }
 .home-reviews-items .swiper-slide-active .home-reviews-items__p {
     text-align: center;
@@ -35,6 +48,9 @@ section.home-reviews .section-center-p {
     line-height: 20px;
     text-align: center;
     right: auto;
+    @include media-breakpoint-down(sm) {
+      font-size: 10px;
+    }
 }
 .home-reviews-items .swiper-wrapper {
     padding-bottom: 90px;
@@ -48,6 +64,9 @@ section.home-reviews .section-center-p {
     text-align: center;
     height: 2px;
     bottom: 100px;
+    @include media-breakpoint-down(sm) {
+      bottom: 100px;
+    }    
 }
 .home-reviews-items .swiper-pagination:after{
     content: '';
@@ -72,16 +91,26 @@ section.home-reviews .section-center-p {
     width: 70px;
     height: 150px;
     display: block;
-    margin: 45px auto 0;
+    margin: 35px auto 0;
     opacity: 0.6;
     text-align: center;
     transition: 0.4s;
+    @include media-breakpoint-down(xss) {
+        margin-top: 18px;
+        width: 50px;
+        height: auto;
+    }
+
 }
 
 .home-reviews .swiper-slide-active span.home-reviews-items__spanimg {
     width: 100%;
     opacity: 1;
-    margin: 0 auto 0;
+    margin: 0 auto 0;    
+    @include media-breakpoint-down(xss) {
+      width: 80px;
+      height: auto;
+    }
 }
 
 .home-reviews .swiper-slide-active {
@@ -90,3 +119,4 @@ section.home-reviews .section-center-p {
 .carousel .slick-slide > div {
     height: 100%;
 }
+

@@ -675,6 +675,11 @@ template {
   height: 1em;
 }
 
+.icon-svg-more {
+  width: 1.375em;
+  height: 1em;
+}
+
 .icon-svg-coin {
   width: 1em;
   height: 1em;
@@ -721,18 +726,18 @@ template {
   padding-left: 0.9375rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 38.75rem;
+  max-width: 95%;
 }
 
 @media (min-width: 40.625rem) {
   .container {
-    max-width: 44.0625rem;
+    max-width: 40.625rem;
   }
 }
 
 @media (min-width: 48rem) {
   .container {
-    max-width: 61.875rem;
+    max-width: 48rem;
   }
 }
 
@@ -748,9 +753,9 @@ template {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 120rem) {
   .container {
-    max-width: 91.25rem;
+    max-width: 75rem;
   }
 }
 
@@ -1690,7 +1695,7 @@ template {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 120rem) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -2285,7 +2290,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 120rem) {
   .d-xl-none {
     display: none !important;
   }
@@ -3118,7 +3123,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 120rem) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -3317,7 +3322,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 120rem) {
   .float-xl-left {
     float: left !important;
   }
@@ -12971,7 +12976,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 120rem) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -14857,7 +14862,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 120rem) {
   .text-xl-left {
     text-align: left !important;
   }
@@ -15027,7 +15032,7 @@ img {
 
 @media (min-width: 48rem) {
   .mw-sm {
-    max-width: 61.875rem;
+    max-width: 48rem;
   }
 }
 

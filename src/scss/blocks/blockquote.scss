@@ -1,0 +1,53 @@
+blockquote{
+
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 35px;
+
+  &:after, &:before{
+    content: '';
+    display: block;
+    background-color: #9a9a9a;
+    height: 1px;
+    width: 250px;
+    margin: 20px auto;
+  }
+  &:before{
+    margin-bottom: 20px;
+  }
+
+  @include media-breakpoint-up(xss) {
+
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 12px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 50px;    
+    font-size: 14px;
+    &:after, &:before{
+      content: '';
+      display: block;
+      background-color: #9a9a9a;
+      height: 1px;
+      width: 250px;
+      margin: 40px auto;
+    }
+    &:before{
+      margin-bottom: 40px;
+    } 
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+    margin-bottom: 80px;
+
+  } 
+  @include media-breakpoint-up(xl) {
+
+  }    
+}

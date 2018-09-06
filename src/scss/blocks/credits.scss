@@ -29,7 +29,7 @@
   margin: 20px 7.5px;
   padding: 0 20px 20px 20px;
   width: 230px;
-  height: 260px;
+  height: 220px;
   text-align: center;
   box-shadow: 0 30px 50px rgba(0,0,0,.09);
   background-color: #fff;
@@ -48,6 +48,8 @@
   &-p{
     font-size: 10px;
     line-height: 18px;
+    height: 75px;
+    overflow: hidden;
     &-img{
       width: 45px;
       height: 45px;
@@ -70,7 +72,7 @@
 }
 
 .credits-plus-form {
-  padding: 60px 0;
+  padding: 35px 0 40px;
   background-image: linear-gradient(139deg,#fa6e71 0,#c83f80 100%);
   color: #fff
 }
@@ -79,6 +81,7 @@
   -ms-flex-pack: justify;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .benefit-invest-items {
@@ -121,7 +124,9 @@
 }
 
 @include media-breakpoint-up(xss) {
-
+  .credits-plus-form {
+    padding: 60px 0;
+  }
   .credits-plus{
       padding: 80px 0 0;
     &-bg{
@@ -153,6 +158,8 @@
       &-p{
         font-size: 12px;
         line-height: 18px;
+        height: 165px;
+        overflow: hidden;
         &-img{
           margin-top: -22.5px;
         }
@@ -225,9 +232,9 @@
     justify-content: center;
   }
   .benefit-invest-form__txt, .credits-plus-form__txt {
-    font-size: 24px;
+    font-size: 18px;
     height: 78px;
-    line-height: 24px;
+    line-height: 20px;
     padding-right: 30px;
     margin: 0;
     display: flex;
@@ -239,6 +246,9 @@
 
 }
 @include media-breakpoint-up(md) {
+  .benefit-invest-form__txt, .credits-plus-form__txt {
+    font-size: 20px;
+  }
   .credits-plus{
     padding: 80px 0 0;
   }
@@ -258,7 +268,11 @@
     }
   }
 }
-
+@include media-breakpoint-up(lg) {
+  .benefit-invest-form__txt, .credits-plus-form__txt {
+    font-size: 24px;
+  }  
+}
 
 @include media-breakpoint-up(xl) {
   .credits-plus-items{

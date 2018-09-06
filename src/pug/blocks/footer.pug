@@ -1,11 +1,30 @@
 mixin footer
   footer.page-footer
     .page-footer-wrap.container
-      .page-footer-item.item--logo
+      .page-footer-item.item--logo.d-none.d-xss-block
         a.page-footer-item__logo(href="")
           +icon-svg('logo-f')
-      |                 
-      .page-footer-item.item--menu
+
+      .page-footer-item.item--contacts.order-sm-2
+
+        a.page-footer-item__logo.d-block.d-xss-none(href="#")
+          +icon-svg('logo-f')
+
+        p.page-footer-item__contacts-p
+          | Свяжитесь с нами
+
+        a.page-footer-item__contacts-a(href="") 8 800 345-89-87
+        |                     
+        p.page-footer-item__p 101000, Москва, Краснопресненская набережная, 13, офис 45
+        |                     
+        .page-footer-item__social
+          a.page-footer-social__a(href="#")
+            +icon-svg('fb')
+          |                         
+          a.page-footer-social__a(href="#")
+            +icon-svg('tw')
+
+      .page-footer-item.item--menu.order-sm-1
         a.page-footer-item__menu-a(href="#") Получить заем
         |                     
         a.page-footer-item__menu-a.active(href="#") Инвестировать
@@ -16,7 +35,7 @@ mixin footer
         |                     
         a.page-footer-item__menu-a(href="#") Конфиденциальность
       |                 
-      .page-footer-item.item--menu
+      .page-footer-item.item--menu.order-sm-1
         a.page-footer-item__menu-a(href="#") О сервисе
         |                     
         a.page-footer-item__menu-a(href="#") Итоги 2017 года
@@ -26,26 +45,13 @@ mixin footer
         a.page-footer-item__menu-a(href="#") Как работает Leika
         |                     
         a.page-footer-item__menu-a(href="#") Контакты
-      |                 
-      .page-footer-item.item--contacts
-        p.page-footer-item__contacts-p
-          | Свяжитесь с нами
-        |                     
-        a.page-footer-item__contacts-a(href="") 8 800 345-89-87
-        |                     
-        p.page-footer-item__p 101000, Москва, Краснопресненская набережная, 13, офис 45
-        |                     
-        .page-footer-item__social
-          a.page-header-social__a(href="#")
-            i.fa.fa-facebook
-          |                         
-          a.page-header-social__a(href="#")
-            i.fa.fa-twitter
-    |             
+              
+
+
     .page-footer-copy.container
       .page-footer-copy__p © Leika. Все права защищены
       |                 
-      .page-footer-copy__dev
+      a(href="#").page-footer-copy__dev
         | Разработано в 
         span.page-footer-copy__dev-span
           +icon-svg('empire_logo')          
