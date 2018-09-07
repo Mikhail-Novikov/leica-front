@@ -1,6 +1,6 @@
 .promo-section{
   z-index: 5;
-  padding-top: 60px;
+  padding-top: 120px;
   padding-bottom: 0;
   .row{
     position: relative;
@@ -168,6 +168,7 @@
 }
 
   @include media-breakpoint-up(sm) {
+    padding-top: 200px;
     &-bg{
       &:after{
         top: -120px;      
@@ -215,6 +216,7 @@
 
 
   @include media-breakpoint-up(md) {
+    padding-top: 220px;
     &-bg{
       &:after{
         top: 0; 
@@ -258,6 +260,7 @@
     }
   }
   @include media-breakpoint-up(lg) {
+    padding-top: 140px;
     padding-bottom: 35px;
     &__title{
      font-size: 48px;

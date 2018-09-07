@@ -28,9 +28,21 @@ mixin header
                   +icon-svg('tw')
 
             +e.btn-call.text-right
-              a.btn-border-grad(href="#callback") Войти
+              a.js_in.btn-border-grad(href="#callback") Войти
               |                     
               a.btn-grad(href="#callback") Зарегистрироваться
+
+            +e.btn-auth.text-right
+              +e.SPAN.wrap-auth-img
+                img(src="", alt="")
+              +e.SPAN.person-name Игорь
+              +e.UL.inner-auth
+                li 
+                  a(href="#") Личный кабинет
+                li 
+                  a(href="#") Профиль
+                li 
+                  a.js_out(href="#") Выйти
 
 
         +e.__hidden.d-xss-none.order-2.order-xss-0
@@ -39,4 +51,4 @@ mixin header
               +e.A.__soc-net-item--fb(href='' target='_blank' title='Facebook')
                 +icon-svg('fb')
               +e.A.__soc-net-item--tw(href='' target='_blank' title='Twitter')
-                +icon-svg('tw')              
+                +icon-svg('tw')

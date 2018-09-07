@@ -6,7 +6,8 @@ header.stickyPoint = 50;
 
 header.bindUIActions = function () {
   document.addEventListener('click', headerToggle);
-  document.addEventListener('click', headerLangToggle);
+  document.addEventListener('click', headerAuthToggle);
+  document.addEventListener('click', pageLoginToggle);  
   window.addEventListener('scroll', headerSticky);
 };
 
@@ -23,16 +24,26 @@ function headerToggle(event) {
   }
 }
 
-function headerLangToggle(event) {
+function headerAuthToggle(event) {
   let target = event.target;
-  if (target.closest('.header__lang-toggle')) {
-    target.closest('.header__lang').classList.toggle('header__lang--open');
+  if (target.closest('.header__btn-auth')) {
+    target.closest('.header__btn-auth').classList.toggle('header__auth--open');
   } else {
-    document.querySelectorAll('.header__lang').forEach(function (item) {
-      item.classList.remove('header__lang--open');
+    document.querySelectorAll('.header__btn-auth').forEach(function (item) {
+      item.classList.remove('header__auth--open');
     });
   }
 }
+
+function pageLoginToggle(event) {
+  let target = event.target;
+  if (target.closest('.js_in')) {
+    target.closest('.header__hidden').classList.toggle('login--yes');
+  } else if(target.closest('.js_out')){
+    target.closest('.header__hidden').classList.remove('login--yes');
+  }
+}
+
 
 function headerSticky() {
   if (document.querySelector('.header')) {
@@ -51,4 +62,4 @@ function headerSticky() {
       }
     }
   }
-}
+} 

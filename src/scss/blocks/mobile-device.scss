@@ -83,6 +83,8 @@
     }
   }
   @include media-breakpoint-up(sm) {
+
+    
     &-content__p {
       font-size: 38px;
       margin-bottom: 70px;
@@ -97,6 +99,10 @@
   }
 
   @include media-breakpoint-up(md) {
+
+  }
+
+  @include media-breakpoint-up(lg) {
     &-links{
       display: flex;
       width: auto;
@@ -104,10 +110,6 @@
         display: inline-block;
       }
     }
-  }
-
-  @include media-breakpoint-up(lg) {
-
 
   }
 
