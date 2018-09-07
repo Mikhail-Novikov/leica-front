@@ -29,7 +29,7 @@ function swiper() {
           speed: 1000,
           slidesPerView: 5,
           centeredSlides: true,
-          spaceBetween: 35,
+          spaceBetween: 0,
           loop: true,
           dots: true,
           centeredSlides: true,
@@ -96,7 +96,14 @@ function swiper() {
           } 
         }        
       }
-      var chSlider = new Swiper(slider,set)
+      var chSlider = new Swiper(slider,set);
+
+      chSlider.on('slideChange', function () {
+        $('.js-wrap-center-p').fadeTo(500,0);
+        $('.js-wrap-center-p').text($('.home-reviews-items .swiper-slide-active').find('.home-reviews-items__text').text()).fadeTo(1000,1);
+        //$('.js-wrap-center-p').fadeIn(100);        
+      }); 
+
     });
 
   }

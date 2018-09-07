@@ -1,0 +1,67 @@
+mixin company-invest
+  +b.SECTION.company-invest.section.section--line
+    .container
+      p.section-center-title Выберите компании для инвестирования
+      +e.P.link 
+        a(href="#") Зарегистрируйтесь 
+        | , чтобы изучить все компании
+
+      .slider.slider-two.swiper-container      
+        .swiper-wrapper
+          +e.item.swiper-slide
+            +e.item-title Домодом
+            +e.item-wrap-img
+
+              +e.IMG(src="img/content/ci1.jpg", alt="").item-img 
+
+            +e.text Департамент маркетинга и продаж упорядочивает повседневный скачок функции. К тому же скалярное произведение естественно притягивает из ряда вон выходящий имидж. Прямоугольная матрица раскручивает баинг и селлинг. 
+
+            +e.item-details
+              +e.P.item-detail заём
+                span 20% 
+
+              +e.P.item-detail осталось привлечь
+                span 429 000 р. 
+            +e.A(href="#").item-btn.btn-grad инвестировать
+
+          +e.item.swiper-slide
+            +e.item-title Пятёрочка
+            +e.item-wrap-img
+
+              +e.IMG(src="img/content/ci2.jpg", alt="").item-img 
+
+            +e.text Рекламная заставка программирует тригонометрический принцип восприятия, что известно даже школьникам. Согласно ставшей уже классической работе Филипа Котлера, создание приверженного покупателя. 
+
+            +e.item-details
+              +e.P.item-detail заём
+                span 22% 
+
+              +e.P.item-detail осталось привлечь
+                span 10 345 000 р.
+            +e.A(href="#").item-btn.btn-grad инвестировать
+
+          +e.item.swiper-slide
+            +e.item-title Домодом
+            +e.item-wrap-img
+
+              +e.IMG(src="img/content/ci1.jpg", alt="").item-img 
+
+            +e.text Департамент маркетинга и продаж упорядочивает повседневный скачок функции. К тому же скалярное произведение естественно притягивает из ряда вон выходящий имидж. Прямоугольная матрица раскручивает баинг и селлинг. 
+
+            +e.item-details
+              +e.P.item-detail заём
+                span 20% 
+
+              +e.P.item-detail осталось привлечь
+                span 429 000 р. 
+            +e.A(href="#").item-btn.btn-grad инвестировать
+
+
+      .swiper-button
+          .swiper-button-next
+            
+            +icon-svg('ic_arrow_right')
+          .swiper-button-prev
+            +icon-svg('ic_arrow_left')
+
+      .swiper-pagination

@@ -737,23 +737,23 @@ template {
 
 @media (min-width: 48rem) {
   .container {
-    max-width: 48rem;
+    max-width: 47.5rem;
   }
 }
 
 @media (min-width: 64rem) {
   .container {
-    max-width: 61.875rem;
+    max-width: 47.5rem;
   }
 }
 
 @media (min-width: 80rem) {
   .container {
-    max-width: 71.875rem;
+    max-width: 68.75rem;
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 100rem) {
   .container {
     max-width: 75rem;
   }
@@ -1695,7 +1695,7 @@ template {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 100rem) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -2290,7 +2290,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 100rem) {
   .d-xl-none {
     display: none !important;
   }
@@ -3123,7 +3123,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 100rem) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -3322,7 +3322,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 100rem) {
   .float-xl-left {
     float: left !important;
   }
@@ -12976,7 +12976,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 100rem) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -14862,7 +14862,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 100rem) {
   .text-xl-left {
     text-align: left !important;
   }
@@ -15032,19 +15032,19 @@ img {
 
 @media (min-width: 48rem) {
   .mw-sm {
-    max-width: 48rem;
+    max-width: 47.5rem;
   }
 }
 
 @media (min-width: 64rem) {
   .mw-md {
-    max-width: 61.875rem;
+    max-width: 47.5rem;
   }
 }
 
 @media (min-width: 80rem) {
   .mw-lg {
-    max-width: 71.875rem;
+    max-width: 68.75rem;
   }
 }
 

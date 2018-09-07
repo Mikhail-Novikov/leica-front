@@ -1,0 +1,45 @@
+mixin credit-invest
+
+  section.section.credits-plus
+    .container
+      p.section-center-title Выгодные условия кредитования
+      
+      .credits-plus-items
+        .credits-plus-items__item
+          p.credits-plus-items__item-p-img
+            +icon-svg('paper-plane')
+
+          p.credits-plus-items__item-title ДОХОДНОСТЬ 
+            br
+            | 15–30%
+
+          p.credits-plus-items__item-p Вы можете получить займ за 4 дня или быстрее. каждый день компании инвесторы заключают по 7 сделок
+
+        .credits-plus-items__item
+          p.credits-plus-items__item-p-img
+            +icon-svg('finances')
+
+          p.credits-plus-items__item-title ВЛОЖЕНИЯ 
+            br
+            | ОТ 10 000 Р.
+
+          p.credits-plus-items__item-p Вы получите столько денег, сколько необходимо для вашего бизнеса
+
+        .credits-plus-items__item
+          p.credits-plus-items__item-p-img
+            +icon-svg('contract')
+    
+          p.credits-plus-items__item-title ВСЁ ОНЛАЙН
+
+
+          p.credits-plus-items__item-p Для принятия решения о выдаче займа нам нужна только банковская выписка. Вы можете отправить её по электронной почте.
+
+
+    .benefit-invest-form
+      .benefit-invest-form__wrap.container
+        p.benefit-invest-form__txt Выберите компанию для инвестирования
+        |         
+        form.section-form(action="")
+          input.section-form__input(type="text", placeholder="Ваш e-mail")
+          |             
+          button.btn-grad.text-capitalize(type="submit") Зарегистрироваться

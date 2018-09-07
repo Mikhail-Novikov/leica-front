@@ -1,0 +1,29 @@
+include lib/variables
+include lib/mixins
+include blocks/page
+include blocks/promo-invest
+include blocks/about
+include blocks/credit-invest
+include blocks/home-therms
+include blocks/credits-table
+include blocks/reviews
+include blocks/mobile-device
+include blocks/credits-plus-form
+include blocks/company-invest
+include blocks/smi
+include blocks/header
+include blocks/footer
+
++page(pagesList.invest.title)
+  +header
+  +b.main.__main
+    +promo-invest
+
+    +credit-invest
+    +home-therms
+    +company-invest
+    +home-reviews
+    +mobile-device
+    +smi
+    +credits-plus-form
+  +footer.__footer

@@ -1,8 +1,10 @@
 .promo-section{
-  position: relative;
   z-index: 5;
-  padding-top: 40px;
-
+  padding-top: 60px;
+  padding-bottom: 0;
+  .row{
+    position: relative;
+  }
 
   &-pluss {
     padding: 50px 0;
@@ -37,23 +39,6 @@
     display: block;
     margin: 0 auto 5px;
     white-space: nowrap;
-  }
-
-  &-bg{
-
-    &:after{
-      content: '';
-      background: url(../img/promofon.jpg) 115% 0 no-repeat;
-      background-size: 100%;
-      position: absolute;
-      top: 150px;
-      right: -300px;
-      z-index: -1;  
-      height: 400px;
-      width: 400px; 
-      border-radius: 100%;      
-    }
-
   }
 
   &__title{
@@ -118,47 +103,143 @@
 
   }
 
-  @include media-breakpoint-up(xss) {
-    &-bg{
 
-      &:after{
-        content: '';
-        background: url(../img/promofon.jpg) 115% 0 no-repeat;
-        background-size: 100%;
-        position: absolute;
-        top: 0;
-        right: -457px;
-        z-index: -1;  
-        height: 915px;
-        width: 915px; 
-        border-radius: 100%;      
-      }
+  &--home{
+    .promo-section{
+      &-bg{
+
+        &:after{
+          background: url(../img/promofon.jpg) 115% 0 no-repeat;
+          right: -300px;    
+        }
+
+      }    
     }
+  }
+  &--invest{
+    .promo-section{
 
-
-
-    &-pluss {
-      padding: 60px 0;
-
-      &__item-p{
-        font-size: 12px;
-        max-width: 225px;
-      }
-    }
-    &-video{
-      margin: 100px 30px 0 15px;
-      &__icon{
-        width: auto;
-      } 
-      &__p{
-        font-size: 16px;
-        line-height: 40px;
-      } 
-
+      &-bg{
+        &:after{
+          background: url(../img/promofon-invest-mobile.png) 50% 50% no-repeat;
+          right: -16.75rem;
+          top: 200px;
+        }
+      }    
     }
   }
 
+  &-bg{
+    &:after{
+      content: '';
+      background-size: 100%;
+      position: absolute;
+      top: 150px;
+      z-index: -1;  
+      height: 400px;
+      width: 400px; 
+      border-radius: 100%;      
+    }
+
+  }
+
+
+  @include media-breakpoint-up(xss) {
+
+  &-pluss {
+    padding: 60px 0;
+
+    &__item-p{
+      font-size: 12px;
+      max-width: 225px;
+    }
+  }
+  &-video{
+    margin: 100px 30px 0 15px;
+    &__icon{
+      width: auto;
+    } 
+    &__p{
+      font-size: 16px;
+      line-height: 40px;
+    } 
+
+  }
+}
+
   @include media-breakpoint-up(sm) {
+    &-bg{
+      &:after{
+        top: -120px;      
+        height: 915px;
+        width: 915px;    
+      }
+    }
+    &--home{
+      .promo-section{    
+       &-bg{
+        &:after{
+          right: -457px;
+        }
+      } 
+    }
+  }
+
+  &--invest{
+    .promo-section{
+      &-bg{
+        &:after{
+          top: -120px;
+          right: auto;
+          left: -630px;
+          background: url(../img/promofon-invest.jpg) 50% 50% no-repeat;
+        }
+      }    
+    }
+  }
+
+  &-call{
+    &__span{
+      font-size: 16px;
+    }
+  }
+
+
+
+  &__title{
+    font-size: 48px;
+  }
+
+}
+
+
+
+  @include media-breakpoint-up(md) {
+    &-bg{
+      &:after{
+        top: 0; 
+      }
+    }
+    &--invest{
+      .promo-section{
+        &-bg{
+          &:after{
+            top: 0;
+          }
+        }    
+      }
+    }
+    &__title{
+       font-size: 48px;
+    }
+    &__p{
+      font-size: 16px;
+      margin-bottom: 70px;
+    }
+    &-pluss__item-title {
+      font-size: 36px;
+      margin: 0 auto 15px;
+    }
     &-pluss {
       padding: 60px 0;
       &__item{
@@ -169,35 +250,24 @@
       &__item-p{
         font-size: 14px;
       }
-    }
-    &-pluss__item-title {
-      font-size: 36px;
-      font-weight: 700;
-      display: block;
-      margin: 0 auto 25px;
-      white-space: nowrap;
-    }
-    &__title{
-      font-size: 48px;
-    }
-
- }
-
-
-
-  @include media-breakpoint-up(md) {
-    &__title{
-     font-size: 60px;
-    }
-    &__p{
-      font-size: 16px;
-      margin-bottom: 70px;
-    }
-    &-pluss__item-title {
-      font-size: 36px;
-      margin-bottom: 15px;
+    }  
+    &-call{
+      &__span{
+        font-size: 18px;
+      }
     }
   }
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 35px;
+    &__title{
+     font-size: 48px;
+   }    
+ }
 
- 
+  @include media-breakpoint-up(xl) {
+    &__title{
+       font-size: 60px;
+       margin-bottom: 15px;
+    }    
+  }
 }

@@ -1,22 +1,22 @@
-mixin promo-home
-  +b.SECTION.promo-section--home.section
+mixin promo-invest
+  +b.SECTION.promo-section--invest
 
-    .container.mb-sm-60.mb-35
+    .container.mb-sm-50.mb-35
       .row
-        .col-sm-6.col-md-8.col-xl-6
-          h1.promo-section__title Кредиты 
+        .col-sm-8.offset-sm-4.col-lg-6.offset-lg-6
+          h1.promo-section__title ИНВЕСТИРУЙТЕ
             br 
-            | для бизнеса
+            | В ПРИБЫЛЬНЫЙ БИЗНЕС
 
-          p.promo-section__p с индивидуальной процентной ставкой
+          p.promo-section__p с доходностью от 15 до 30% годовых
         
           .promo-section-call
-            .promo-section-call__span Рассчитайте сумму займа
+            .promo-section-call__span ЗАРЕГИСТРИРУЙТЕСЬ И ВЫБЕРИТЕ КОМПАНИЮ ДЛЯ ИНВЕСТИРОВАНИЯ
 
             form.section-form(action="")
-              input.section-form__input(type="text", placeholder="Название компании или ИП")
+              input.section-form__input(type="text", placeholder="Ваш e-mail")
 
-              button.btn-grad(type="submit" title="Отправить мне письмо с рассчётом") Узнать
+              button.btn-grad.text-capitalize(type="submit" title="Отправить мне письмо с рассчётом") Зарегистрироваться
 
           .promo-section-video
             span.promo-section-video__icon.pulse
@@ -29,7 +29,7 @@ mixin promo-home
         .promo-section-bg
 
 
-    .promo-section-pluss
+    section.promo-section-pluss
       .container
         .row.justify-content-between
 
@@ -44,9 +44,9 @@ mixin promo-home
             span.promo-section-pluss__item-p компаний уже получили займы
 
           .col-sm-3.promo-section-pluss__item
-            p.promo-section-pluss__item-title 1 987 650
+            p.promo-section-pluss__item-title 1 023 430
 
-            span.promo-section-pluss__item-p рублей привлечено через Leika
+            span.promo-section-pluss__item-p рублей получено инвесторами
 
           .col-sm-3.promo-section-pluss__item
             p.promo-section-pluss__item-title 8

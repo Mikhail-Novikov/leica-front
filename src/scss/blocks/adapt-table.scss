@@ -31,7 +31,7 @@ table.credits-table-tablest tbody td:not(.cell-container) p {
 table.credits-table-tablest tbody td:nth-last-child(2) p {
   border-right: 1px solid transparent;
 }
-table.credits-table-tablest {
+table.credits-table-tablest:not(.cell-container) {
   tbody tr {
     position: relative;
       border-radius: 4px;    
@@ -120,10 +120,7 @@ table.credits-table-tablest {
     .adapt-table--none {
       display: table-cell;
     }
-    tbody td p {
-      display: block;
-      padding: 22px 20px;
-    }
+
     .price {
       border-right: 1px solid #9a9a9a;
       display: block;
@@ -132,10 +129,26 @@ table.credits-table-tablest {
   @include media-breakpoint-up(md) {
     font-size: 16px;
     tbody td p {
+      font-size: 12px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    tbody td p {
+      display: block;
+      padding: 10px 20px;
+      margin: 18px 0;
       font-size: 14px;
     }
   }
+
 }
+@include media-breakpoint-up(sm) {
+  .credits-table {
+    padding-top: 0;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .credits-table {
     margin-top: 40px;
